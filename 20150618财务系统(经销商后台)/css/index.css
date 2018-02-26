@@ -1,0 +1,54 @@
+.header{border-bottom: 1px solid #f5b5c2;background: url(../images/headerBg.jpg) no-repeat center top;height: 3rem;width: 100%;
+	background-size: cover;line-height: 3rem;padding-top: 0.3rem;
+}
+.logo{height: 2.2rem;margin-left: 0.5rem;position: relative;margin-top: 0.2rem;float: left;}
+.logo .logoImg{width: 2.5rem;position: absolute;left:0.3rem;top: 0.3rem;}
+.logo .line1{width:2.6rem;height:2.6rem;position: absolute;left: 0.1rem;top: 0.1rem;border:2px solid #fff;
+	border-radius: 80px 80px 80px 80px;	border-right-color: transparent;border-top-color: transparent;}
+
+.logoWrap{width:2.1rem;height:2.1rem;background:url(../images/logo.png) no-repeat center center;position: relative;border-radius: 70px;
+    background-size: cover;float: left;}
+.logoWrap .line2{width: 2.35rem;height: 2.35rem;position: absolute;left:-6%;top:-6%;border:2px solid rgba(255,255,255,1);border-radius: 100px 100px 100px 100px;
+    border-left-color: rgba(255,255,255,0.4);border-right-color: rgba(255,255,255,0.4);}
+.logo span{display: inline-block;float: left;margin-left: 0.3rem;font-size: 0.6rem;color: #fff;margin-top: -0.5rem;font-family: "微软雅黑"}
+
+.header .myInfo{float: right;margin-right: 15px;margin-top: -0.3rem;font-size: 0.4rem;}
+.header .myInfo a{color: #fff;}
+
+
+.col-xs-8{width: 63.66666667%;margin-left: 3%}
+
+
+/*content*/
+.content{padding-bottom: 0.2rem;}
+.proList{margin-bottom: 15px;}
+.proList li{height: 1.5rem;line-height: 1.5rem;box-sizing: content-box;border-bottom: 1px solid #dddddd;background:#fff;
+	font-size: 0.5rem;}
+.imgWrap{display: table-cell;height: 100%;height: 100%;text-align: center;}
+
+.trigStyle{height: 16px;}
+
+.finalInfo{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.finalInfo li{border-bottom: none;}
+.marketInfo1 li{border-bottom: none;}
+.proList .borderStyle{border-bottom: 1px solid #eee;height: 100%;}
+.rightTriggleStyle{text-align: right;}
+.rightTriggleStyle .trigStyle{display:inline-block;text-align: center;}
+
+.marketInfo{border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.marketInfo2 li{border-bottom: none;}
+
+.proListCon a{color: #333}
+.trigStyle{-webkit-transition:0.2s;}
+.proListCon .indexIcon{display: inline-block;width: 32px;height: 32px;border-radius: 10px;text-align: center;line-height: 32px;}
+.imgStyle{width:22px;display: inline-block;margin-top: -0.1rem;}
+
+.personInfo ul a:nth-of-type(1) .indexIcon{background: #6bb890}
+.finalInfo ul a:nth-of-type(1) .indexIcon{background: #d83c6b;}
+.finalInfo ul a:nth-of-type(2) .indexIcon{background: #44b5df;}
+.finalInfo ul a:nth-of-type(3) .indexIcon{background: #8a8fd6;}
+.marketInfo1 ul a:nth-of-type(1) .indexIcon{background: #f3944f;}
+.marketInfo1 ul a:nth-of-type(2) .indexIcon{background: #a4bf78;}
+.marketInfo1 ul a:nth-of-type(3) .indexIcon{background: #e36584;}
+.marketInfo2 ul a:nth-of-type(1) .indexIcon{background: #ad80dc;}
+

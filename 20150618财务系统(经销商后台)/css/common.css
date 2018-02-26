@@ -1,0 +1,75 @@
+body,html,div,p,ul,li,ol,dl,dt,dd,img,a,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul,li,dl,dt,dd{list-style: none;}
+a{text-decoration: none;outline: none;}
+a:hover{text-decoration: none;}
+img{border:0;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);outline: none;}
+.container{max-width: 640px;}
+
+.wrap{width: 100%;max-width: 640px;position: relative;overflow: hidden;min-height: 100%;margin: 0 auto;}
+body,html{font-family: "宋体";background: #f2f2f0;}
+
+.noPadding{padding:0;}
+.noPaddingR{padding-right: 0}
+.noPaddingL{padding-left: 0}
+.noMargin{margin: 0;}
+.marginL{margin-left: -0.3rem}
+.maxMarginL{margin-left: 0.3rem}
+.noMarginL{margin-left: 0;}
+.paddingL{padding-left: 15px;}
+.paddingSmlL{padding-left: 10px;}
+
+
+@-webkit-keyframes line2 {
+    from{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@keyframes line2 {
+    from{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+.logoWrap .line2 {
+  -webkit-animation: line2 4s ease-in-out infinite;
+          animation: line2 4s ease-in-out infinite;
+}
+.nodeWrap .line2 {
+  -webkit-animation: line2 4s ease-in-out infinite;
+          animation: line2 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">  
+<head>
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">   
+<title>提现未绑定银行卡</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<link rel="stylesheet" type="text/css" href="css/userData.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	(function($){
+		$().ready(function(){
+			$('.cashTop li').on('click',function(){
+				var _thisIndex=$(this).index();
+				$('.cashTop li a').removeClass('cashTopActive');
+
+				$('.cashTop li').eq(_thisIndex).find('a').addClass('cashTopActive');
+
+				$('.cashTop .cashBotLine').stop().animate({
+					'left':_thisIndex*34+3+'%'
+				});
+
+				$('.cashCon').addClass('hide');
+				$('.cashCon').eq(_thisIndex).removeClass('hide');
+
+			});
+
+
+			//添加银行卡 
+			$('.card a.addCard').on('click',function(){
+				$('.cashDetails').slideDown();
+				$(this).fadeOut();
+			});
+
+		})
+	})(jQuery)
+</script>
+
+</head>
+<body>
+
+<div class="wrap">
+	<!-- <h1 class="header" onclick="location.reload()"><span><a href="#"><img src="images/backBtn.png"></a></span>提现未绑定银行卡</h1> -->
+	<div class="cashTop">
+		<ul>
+			<li><a href="javascript:;" class="cashTopActive">提现申请</a></li>
+			<li><a href="javascript:;">提现记录</a></li>
+			<li><a href="javascript:;">银行卡管理</a></li>
+			<span class="cashBotLine"></span>
+		</ul>
+	</div>
+	
+
+	<div class="cashCon ">
+		<div class="cashInfo">
+			<ul class="container">
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">账户可用余额</div>
+					<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 cashBalance">74474.69(元)</div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">可提现余额</div>
+					<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 cashBalance">74474.69(元)</div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">可提现余额</div>
+					<div class="col-xs-6 col-md-6 cashBalance"><input type="text" class="inp" placeholder="请输入转出金额"></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">提现手续费</div>
+					<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 cashBalance">74474.69(元)</div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">提现银行卡</div>
+					<div class="col-xs-6 col-md-6 cashBalance noPadding"><p style="color:#b9b9b9">您还未绑定任何银行卡</p></div>
+					<div class="col-xs-2 col-md-2 cashBalance noPadding" ><a href="#" class="bindingCard">绑定</a><span> &gt;</span></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">实际到账金额</div>
+					<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 cashBalance">74474.69(元)</div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-4 col-md-4 noPadding">提现后账户金额</div>
+					<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 cashBalance">74474.69(元)</div>
+				</li>
+			</ul>
+		</div>
+		<div class="pswPower">
+			<h2>二级密码设置授权</h2>
+			<div class="pswCon">
+				<p class="pswTips">检测到您未设置提现密码，设置提现密码方可提现。</p>
+				<p class="pswQrCode">请用微信扫描该二维码，设置后请牢记扫码手机</p>
+				<a href=""><div class="pswBtn"><p><img src="images/triggleTop.png"></p>现在设置</div></a>
+			</div>
+		</div>
+		<div class="cashBtn"><button type="submit">申请提现</button></div>
+	</div>
+
+	<div class="cashCon cashRecord hide">
+		<div class="container">
+			<ul>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+				<li class="row noMarginL">
+					<div class="col-xs-8 col-md-8 noPadding">提现成功<p class="cashBank">陈木木-中国工商银行（尾号4847）</p></div>
+					<div class="col-xs-4 col-md-4">2015-06-18<p class="cashStyle">-801.09</p></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="card cashCon hide">
+		<div class="container">
+			<a href="#" class="addCard">
+				<ul class="row">
+					<li class="col-xs-8 col-md-8 cardLeft"><span style="font-size:0.8rem;font-weight: bold;">+</span><span>添加银行卡</span></li>
+					<li class="col-xs-4 col-md-4 cardMore">&gt;</li>
+				</ul>
+			</a>
+		</div>
+
+		<div class="cashDetails">
+			<p class="cashDetailsTips">请绑定持卡人本人的银行卡</p>
+			<div class="container cashInfoCon">
+				<ul>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">用户</div>
+						<div class="col-xs-8 col-md-8 noPaddingL"><input type="text" class="inp  form-control"></div>
+					</li>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">开户名</div>
+						<div class="col-xs-8 col-md-8 noPaddingL"><input type="text" class="inp  form-control"></div>
+					</li>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">开户银行</div>
+						<div class="col-xs-8 col-md-8 noPaddingL">
+							<select class="form-control">
+								<option>请选择</option>
+								<option>光谷软件园支行</option>
+								<option>光谷支行</option>
+							</select>
+						</div>
+					</li>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">开户名支行名称</div>
+						<div class="col-xs-8 col-md-8 noPaddingL"><input type="text" class="inp  form-control"></div>
+					</li>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">银行账号</div>
+						<div class="col-xs-8 col-md-8 noPaddingL"><input type="text" class="inp  form-control"></div>
+					</li>
+					<li class="row noMarginL">
+						<div class="col-xs-4 col-md-4 noPadding">身份证</div>
+						<div class="col-xs-8 col-md-8 noPaddingL"><input type="text" class="inp  form-control"></div>
+					</li>
+				</ul>			
+			</div>
+			<div class="bindingBtn"><button class="submit">绑定</button></div>	
+		</div>
+
+
+
+	</div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

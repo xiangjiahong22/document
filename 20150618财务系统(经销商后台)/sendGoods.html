@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">  
+<head>
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">   
+<title>待发货</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<link rel="stylesheet" type="text/css" href="css/userData.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	(function($){
+		$().ready(function(){
+			$('.goodsToggle li').on('click',function(){
+				var _thisIndex=$(this).index();
+				
+				$('.goodsToggle li a').removeClass('goodsActive');
+				$('.goodsToggle li').eq(_thisIndex).find('a').addClass('goodsActive');
+
+				$('div.sendGoodsCon').addClass('hide');
+				$('div.sendGoodsCon').eq(_thisIndex).removeClass('hide');
+
+
+				$('.goodsToggle span').animate({
+					'left':((_thisIndex+1)+_thisIndex*2.6)*14+'%'
+				})
+			})
+		})
+	})(jQuery)
+</script>
+
+</head>
+<body>
+
+<div class="wrap">
+	<!-- <h1 class="header" onclick="location.reload()"><span><a href="#"><img src="images/backBtn.png"></a></span>待发货</h1> -->
+
+	<div class="goodsToggle">
+		<ul>
+			<li><a href="javascript:;" class="goodsActive">待发货</a></li>
+			<li><a href="javascript:;">发货记录</a></li>
+			<span class="goodsBotLine"></span>
+		</ul>
+	</div>
+
+	<div class="sendGoodsCon">
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sendGoodsCon hide">
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL orderState">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 col-xs-offset-6 col-md-offset-6 noPaddingL">补货状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL orderState">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 col-xs-offset-6 col-md-offset-6 noPaddingL">补货状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL orderState">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 col-xs-offset-6 col-md-offset-6 noPaddingL">补货状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="sendGoods">
+			<div class="sendGUser">
+				<div class="container">
+					<ul>
+						<li class="row ">
+							<div class="col-xs-6 col-md-6 ">下单用户：刘风</div>
+							<div class="col-xs-6 col-md-6 noPaddingL" style="padding-left:5px">订单号：33</div>
+						</li>
+						<li class="row noMarginL orderState">
+							<div class="col-xs-6 col-md-6 noPaddingL">订单金额:<span class="fontStyle">￥210.00</span></div>
+							<div class="col-xs-6 col-md-6 noPaddingL">订单状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL ">
+							<div class="col-xs-6 col-md-6 col-xs-offset-6 col-md-offset-6 noPaddingL">补货状态:<button type="button" class="btn">已确认</button></div>
+						</li>
+						<li class="row noMarginL orderTime">
+							<div class="col-xs-6 col-md-6 noPaddingL">下单时间：2015-06-16</div>
+							<div class="col-xs-6 col-md-6 noPaddingL">发货时间：2015-06-16</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
