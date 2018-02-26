@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">  
+<head>
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">   
+<title>个人中心</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common_1.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	(function($){
+		$().ready(function(){
+			$('.allOrderList li').on('click',function(){
+				var thisIndex=$(this).index();
+				$('.allOrderList li').removeAttr('indexAttr');
+				$(this).attr('indexAttr',thisIndex);
+			})
+		});
+	})(jQuery);
+</script>
+
+</head>
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<p class="userImg"><img src="images/userImg.png" onclick="location.reload();"></p>
+		<p class="userText" >樱桃小丸子</p><!-- 
+		<p class="userInfoEdit"><a href="#"><img src="images/editIcon.png"></a></p> -->
+	</div>
+
+	<div class="orderInfo">
+		<div class="allOrder">
+			<div class="container">
+				<ul class="row  allOrderList">
+					<li class="col-xs-3 col-md-3 "><a href="allOrder.html#1"><p class="listTopIcon"><span><img src="images/allOrderImg1.png"></span><span class="orderNum">2</span></p><p>待付款</p></a></li>
+					<li class="col-xs-3 col-md-3"><a href="allOrder.html#2"><p class="listTopIcon"><span><img src="images/allOrderImg2.png"></span><span class="orderNum">12</span></p><p>待发货</p></a></li>
+					<li class="col-xs-3 col-md-3"><a href="allOrder.html#3"><p class="listTopIcon"><span><img src="images/allOrderImg3.png"></span><span class="orderNum">2</span></p><p>待收货</p></a></li>
+					<li class="col-xs-3 col-md-3"><a href="http://baidu.com"><p class="listTopIcon"><span><img src="images/allOrderImg4.png"></span></p><p>退订/售后</p></a></li>
+					<a href="">
+						<li class="row allOrderDetail noMargin animated1 bounceInRight">
+							<div class="col-xs-2 col-md-2 noPadding"><span class="orderListIcon orderIcon1"></span></div>
+							<div class="col-xs-3 col-md-3 noPadding orderText marginMaxL">全部订单</div>
+							<div class="col-xs-7 col-md-7 noPaddingL text-right"><span class="orderStyle">查看全部订单</span>&nbsp;<span class="rightMore"><img src="images/triggleRight.png"></span></div>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+
+		<div class="bonus myRedIndex">
+			<ul class="container">
+				<a href="">
+					<li class="row noMarginL animated1 bounceInRight">
+						<div class="col-xs-2 col-md-2 noPadding text-left"><span class="orderListIcon orderIcon2"></span></div>
+						<div class="col-xs-3 col-md-3 noPadding orderText marginMaxL">我的红包</div>
+						<div class="col-xs-7 col-md-7 noPaddingL text-right"><span class="fontStyle">￥158.00&nbsp;<span class="rightMore"><img src="images/triggleRight.png"></span></div>
+					</li>
+				</a>
+				<a href="">
+					<li class="row noMarginL animated1 bounceInRight">
+					<div class="col-xs-2 col-md-2 noPadding text-left"><span class="orderListIcon orderIcon3"></span></div>
+					<div class="col-xs-3 col-md-3 noPadding orderText marginMaxL">去逛逛</div>
+					<div class="col-xs-7 col-md-7 noPaddingL text-right"><span class="orderStyle">更多惊喜等着您</span>&nbsp;<span class="rightMore"><img src="images/triggleRight.png"></span></div>
+				</li>
+				</a>
+			</ul>
+		</div>
+
+		<div class="bonus moreSet">
+			<ul class="container">
+				<a href="">
+					<li class="row noMarginL animated1 bounceInRight">
+						<div class="col-xs-2 col-md-2 noPadding"><span class="orderListIcon orderIcon4"></span></div>
+						<div class="col-xs-3 col-md-3 noPadding  orderText marginMaxL" >更多设置</div>
+						<div class="col-xs-7 col-md-7 noPaddingL text-right"><span class="orderStyle">收货地址、用户反馈</span>&nbsp;<span class="rightMore"><img src="images/triggleRight.png"></span></div>
+					</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

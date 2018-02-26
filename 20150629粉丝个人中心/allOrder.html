@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">  
+<head>
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">   
+<title>全部订单</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	(function($){
+		$().ready(function(){
+
+
+			$('.faDetailsHead li').on('click',function(){
+				var _thisIndex=$(this).index();
+				$('.faBotLine').stop().animate({
+					'left':_thisIndex*20+"%"
+				});
+				$('.faDetailsHead li a').removeClass('faDetailsActive');
+				$('.faDetailsHead li').eq(_thisIndex).find('a').addClass('faDetailsActive');
+
+				$('.detailsToggle').addClass('hide');
+				$('.detailsToggle').eq(_thisIndex).removeClass('hide');
+
+			})
+
+			var windowHash=parseInt(window.location.hash.replace("#",""));
+			
+			$('.faDetailsHead ul li').eq(windowHash).trigger('click');
+
+
+		})
+	})(jQuery)
+</script>
+
+</head>
+<body>
+
+<div class="wrap">
+	<div class="test"></div>
+
+	<div class="faDetails">
+		<div class="faDetailsHead">
+			<ul>
+				<li name="faDetailList1"><a href="javascript:;" class="faDetailsActive">全部订单</a></li>
+				<li name="faDetailList2"><a href="javascript:;">待付款</a></li>
+				<li name='faDetailList3'><a href="javascript:;">待发货</a></li>
+				<li name="faDetailList4"><a href="javascript:;">待收货</a></li>
+				<li><a href="javascript:;">取消订单</a></li>
+				<span class="faBotLine"></span>
+			</ul>
+		</div>
+
+
+		<div class="allDetails detailsToggle ">
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="allDetails detailsToggle hide">
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="allDetails detailsToggle hide">
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div><div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="allDetails detailsToggle hide">
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="allDetails detailsToggle hide">
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="container allOrderCon">
+				<ul class="orderList">
+					<li class="row noMargin">
+						<div class="col-xs-7 col-md-7 noPaddingL">订单号:4343131313</div>
+						<div class="col-xs-5 col-md-5 text-right goodsStyle noPaddingR">已发货</div>
+					</li>
+					<li class="row noMargin">
+						<div class="col-xs-3  col-md-3 noPadding"><a href="#"><img src="images/orderImg.jpg" class="img-responsive"></a></div>
+						<div class="col-xs-6  col-md-6 noPaddingR"><a href="#"><h2>细胞奇肌干细胞3D修复面膜(精品装)</h2></a><p class="orderTime">下单日期：2015-06-22</p></div>
+						<div class="col-xs-3 col-md-3 noPaddingR fontStyle text-right">￥119.40<p class="text-right">x1</p></div>
+					</li>
+					<li class="row noMargin ">
+						<div class="col-xs-12 col-md-12 text-right orderSum noPaddingR">共1件商品&nbsp;&nbsp;<span>实付：<span class="fontStyle">￥119.40</span></span></div>
+					</li>
+					<li class="row noMargin" >
+						<div class="col-xs-12 col-md-12 delOrder noPaddingR"><a href="#">取消订单</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+
+
+</div>
+
+
+
+
+</body>
+</html>

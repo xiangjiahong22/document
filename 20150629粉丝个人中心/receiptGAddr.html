@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="width:100%;height:100%;">  
+<head>
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0;">   
+<meta name="format-detection" content="telephone=no" />
+<title>收货地址</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	(function($){
+		$().ready(function(){
+			$('.receiptGAddr .addrlist').on('click',function(){
+				$('.receiptGAddr .addrlist').removeClass('addrlistActive');
+				$(this).addClass('addrlistActive');
+				$('.addrlist .addrListChk input[type="checkbox"]').removeAttr('checked');
+				$('.addrListChk input[type="checkbox"]',this).prop('checked',true);
+			})
+		})
+	})(jQuery);
+</script>
+
+
+</head>
+<body style="width:100%;height:100%;">
+
+<div class="wrap receiptGAddr">
+	<div class="">
+		<ul class="container addrlist addrlistActive">
+			<li class="row ">
+				<div class="col-xs-10 col-md-10">
+					<p class="userInfo"><span class="userName">猪八戒</span><span class="userTel">18071751043</span></p>
+					<p>[默认]湖北省武汉市洪山区光谷一路光谷总部国际2期6栋503室</p>
+				</div>
+				<div class="col-xs-2 col-md-2 addrListChk"><span class="checkBox"></span><input type="checkbox" checked></div>
+			</li>
+		</ul>
+		<ul class="container addrlist">
+			<li class="row ">
+				<div class="col-xs-10 col-md-10">
+					<p class="userInfo"><span class="userName">猪八戒</span><span class="userTel">18071751043</span></p>
+					<p>[默认]湖北省武汉市洪山区光谷一路光谷总部国际2期6栋503室</p>
+				</div>
+				<div class="col-xs-2 col-md-2 addrListChk"><span class="checkBox"></span><input type="checkbox"></div>
+			</li>
+		</ul>
+		<ul class="container addrlist">
+			<li class="row ">
+				<div class="col-xs-10 col-md-10">
+					<p class="userInfo"><span class="userName">猪八戒</span><span class="userTel">18071751043</span></p>
+					<p>[默认]湖北省武汉市洪山区光谷一路光谷总部国际2期6栋503室</p>
+				</div>
+				<div class="col-xs-2 col-md-2 addrListChk"><span class="checkBox"></span><input type="checkbox"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="addNewAddr setDefaultAddr">
+		<a href="#">添加新地址</a>
+	</div>
+
+</div>
+
+
+
+
+</body>
+</html>
