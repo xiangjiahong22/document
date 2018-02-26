@@ -1,0 +1,164 @@
+body,html,div,p,ul,li,ol,dl,dt,dd,img,a,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul,li,dl,dt,dd{list-style: none;}
+a{text-decoration: none;outline: none;}
+a:hover{text-decoration: none;}
+img{border:0;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+.wrap{width: 100%;max-width: 640px;position: relative;overflow: hidden;min-height: 100%;margin: 0 auto;}
+body,html{font-family: "宋体";background: #f1f1f1;overflow: hidden;width: 100%;height: 100%;}
+
+.noPaddingL{padding-left: 0}
+.noPaddingR{padding-right: 0}
+.noPadding{padding: 0}
+/*选择快递方式*/
+.header{width: 100%;height: 1.3rem;line-height:1.3rem;background: #daa953;font-size: 0.45rem;color: #fff;}
+.header p span{font-size: 0.5rem;}
+.content{position: absolute;left:0;top: 1.3rem;overflow: auto;bottom: 1.5rem;padding-top: 0.6rem;}
+
+.expressWays{margin-top: 0.45rem;margin: 0;text-align: center;}
+.freePick{width: 5.4rem;height:5.4rem;background: url(../images/expWaysBg.png) no-repeat center center;
+	position: relative;border-radius: 50%;
+}
+.expressWays img{display: inline-block;}
+.freePick .freePickImg1,.freePick .freePickImg2{position: relative;top: 1.7rem;left:0;text-align: center;}
+.freePickImg1 img{width: 70%;display: inline-block;}
+.freePickImg2{margin-top: 0.3rem;}
+.freePickImg2 img{width: 85%;}
+.freePickImg3 img{margin-top: 2rem;width: 60%;}
+
+.expWay{margin-top: 0.45rem;}
+
+.expWay .freePickImg1{top: 1rem;}
+.expWay .freePickImg2{margin-top: -0.3rem;}
+.expWay .freePickImg1 img{width: 60%}
+
+
+.footer{position: absolute;left:0;bottom: 0;width: 100%;height: 1.5rem;line-height: 1.5rem; text-align: center;}
+.footer a{display: inline-block;width: 50%;float: left;font-size: 0.55rem;color: #fff}
+.footer a.goback{background: #ff9600;}
+.footer a.dict{background: #fa7601;}
+
+
+
+/*免费提货区-区域查找*/
+.header{width: 100%;height: 1.3rem;line-height:1.3rem;background: #daa953;font-size: 0.45rem;color: #fff}
+.header p span{font-size: 0.5rem;}
+.noPadding{padding:0;}
+.noPaddingR{padding-right: 0}
+.noPaddingL{padding-left: 0}
+.noMargin{margin: 0;}
+.content{position: absolute;left:0;overflow-y: auto;bottom: 1.6rem;width: 100%;overflow-x:hidden;}
+
+.freePickList a{color: #777777;}
+.freePickList{font-size: 0.45rem;color: #666}
+.freePickList h2{font-size: 0.5rem;font-weight: bold;color: #333;}
+.freePickList li{padding: 0.3rem 0 0.2rem 0;border-bottom: 1px solid #dddddd;}
+.freePickListL .tel{float: right;margin-right: 20px;}
+.freePickListL .addrDetail{font-size: 0.4rem;margin-top: 0.2rem;}
+.freePickListL .addrInfo{margin-top: 0.3rem;}
+
+.addrNum{background: url(../images/areaIcon.png) no-repeat left center;font-size: 0.4rem;margin-top: 0.25rem;padding: 0.1rem 0.1rem 0 0.5rem;}
+.freePickListR{text-align: center;}
+.freePickListR .chk{margin-top: 0.6rem;width: 0.6rem;height:0.6rem;}
+
+.tipsBot{width: 100%;margin-top: 1.5rem;text-align: center;color: #ffa422;font-size: 0.5rem;}
+.tipsBot span{display:inline-block;background: url(../images/tipsBg.png) no-repeat left center;padding-left: 0.6rem;background-size: 6%}
+
+.wrapBot{width: 100%;height: 100%;position:absolute;left:100%;z-index:9999;display: none;}
+button.searchBtnTog{width: 100%;padding: 6px 5px!important;margin-top: 2px;}
+.wrapBot .areaSearch .inp{height: 0.9rem;width: 80%}
+.wrapBot .areaSearch{height: 1rem;}
+.wrapBot .searchHead{padding: 0.4rem 0}
+.historyInfo{clear: both;color: #ccc;font-size: 0.4rem;padding-top: 0.6rem;font-weight: normal;border-bottom: 1px solid #dedbdb;padding-bottom: 0.2rem;}
+
+.wrapBot  .areaSearch .searchClose{margin-left: 0px;display: inline-block;width: 25px;height: 25px;background: #d7d7d7;margin-top: 0.1rem;
+	line-height: 25px;text-align: center;border-radius: 50%;display: none;color: #fff;}
+
+
+
+/*免费提货区-区域查找*/
+
+.areaSearchToggle .inp{width: 70%;height: 0.9rem;line-height:0.9rem;border: 0;margin-left:10px;background: #e7e7e7;outline: none;float: left;
+	color: #afafaf;outline: none;font-size: 0.45rem;}
+.areaSearchToggle{height: 1rem;line-height:1rem;background: #e7e7e7;border: 1px solid #888888;border-radius: 12px;margin-top: 3px;
+	position: relative;}
+
+.areaSearchToggle .searchClose{margin-left: 0px;display: inline-block;width: 25px;height: 25px;background: #d7d7d7;margin-top: 0.1rem;
+	line-height: 25px;text-align: center;border-radius: 50%;color: #fff;float: right;margin-right: 5px;display: none;}
+
+.areaSearchToggle .searchBtn{float: left;display: inline-block;height: 0.8rem;width: 25px;
+	background: url(../images/searchBtn1.png) no-repeat center center;background-size:80% }
+
+.searchHead{font-size: 0.35rem;background: #e7e7e7;padding: 0.3rem 0}
+.searchHeadCon{height: 1rem;line-height: 1rem;}
+.pickWaysList li{color: #333;}
+.pickWaysList li span{color: #b7b8b9;}
+
+.searchHeadCon li img{width: 20%;vertical-align: middle;display: inline-block;margin-top: -3px;}
+.areaFindList a:nth-of-type(2) li{color: #daa953}
+
+.areaSearch{height: 0.8rem;line-height:0.8rem;background: #e7e7e7;border: 1px solid #888888;border-radius: 12px;margin-top: 3px;position: relative;}
+.areaSearch .inp{width: 70%;height: 0.7rem;line-height:0.7rem;border: 0;margin-left:10px;background: #e7e7e7;outline: none;float: left;color: #afafaf;}
+.areaSearch .searchBtn{float: left;display: inline-block;height: 0.8rem;width: 25px;
+	background: url(../images/searchBtn1.png) no-repeat center center;background-size:80% }
+
+.areaWrap{text-align: center;font-size: 0.5rem;}
+.areaWrap .areaRightWrap{position: relative;height: 12rem;overflow-y:scroll;overflow-x:hidden;}
+.areaRightCon{position: absolute;top: 0;right: 0;width: 100%;}
+
+.areaListL{background: #eee;}
+.areaListL a{color: #333;}
+.areaListR a{color: #666;}
+
+.areaWrap li{height: 1.2rem;border-bottom: 1px solid #d9d9d9;line-height: 1.2rem;}
+.areaWrap a{display: inline-block;height: 1rem;line-height: 1rem;width: 100%;}
+
+.areaListL li.areaListLActive{background: #f3f0e9;}
+.areaListL li.areaListLActive a{border-left: 3px solid #daa953;width: 100%;}
+.areaListR li.areaListRActive{background: #f3f0e9;}
+
+
+.areaListL li{border-right:1px solid #dbdbdb; }
+
+.footer{position: absolute;left:0;bottom: 0;width: 100%;height: 1.5rem;line-height: 1.5rem; text-align: center;}
+.footer a{display: inline-block;width: 50%;float: left;font-size: 0.55rem;color: #fff}
+.footer a.goback{background: #ff9600;}
+.footer a.dict{background: #fa7601;}
+
+.footer .unCheckTips{position: absolute;right:0.5rem;bottom: 1.4rem;background: url(../images/unCheckBg.png) no-repeat center center;color: #fff;
+	font-size: 0.4rem;	padding: 0rem 0.3rem;background-size: contain;line-height: 1.4rem;
+}
+
+/*快递提货区*/
+.expressPickCon .row{margin: 0;padding: 0.3rem 0}
+.expressPickCon li{border-bottom: 1px solid #ddd;color: #777777;font-size: 0.45rem;}
+.expressPickCon li h2{font-size: 0.5rem;color: #333;font-weight: bold;}
+.expressPickCon li p{margin-top: 0.15rem;}
+.expressBtn{height: 100%;padding-top: 0.7rem;}
+.expressBtn .che{margin-left: 0.1rem;width: 0.6rem;height:0.6rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
